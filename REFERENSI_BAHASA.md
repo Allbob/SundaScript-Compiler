@@ -5,85 +5,85 @@ Dokumen ini berisi daftar lengkap pemetaan (*mapping*) kata kunci (keywords) dan
 ## 1. Kata Kunci Dasar (Keywords)
 
 ### Boolean & Nilai Khusus
-* `True` ➔ `Bana`
-* `False` ➔ `Salah`
-* `None` ➔ `Kosong`
+* `True` ➔ `Leres`
+* `False` ➔ `Lepat`
+* `None` ➔ `Suwung`
 
 ### Logika
-* `and` ➔ `jo`
-* `or` ➔ `atau`
-* `not` ➔ `indak`
+* `and` ➔ `jeung`
+* `or` ➔ `atawa`
+* `not` ➔ `henteu`
 
 ### Percabangan
-* `if` ➔ `kok`
-* `elif` ➔ `kok_lain`
-* `else` ➔ `lainnyo`
+* `if` ➔ `lamun`
+* `elif` ➔ `lamun_sanes`
+* `else` ➔ `sanesna`
 
 ### Perulangan
-* `for` ➔ `untuak`
-* `while` ➔ `salamo`
-* `in` ➔ `di`
-* `break` ➔ `baranti`
-* `continue` ➔ `taruih`
-* `pass` ➔ `lewat`
+* `for` ➔ `pikeun`
+* `while` ➔ `salami`
+* `in` ➔ `dina`
+* `break` ➔ `eureun`
+* `continue` ➔ `teras`
+* `pass` ➔ `liwatan`
 
 ### Fungsi
-* `def` ➔ `buek`
-* `return` ➔ `baliakan`
-* `yield` ➔ `hasilkan`
-* `lambda` ➔ `fungsi_ketek`
+* `def` ➔ `jieun`
+* `return` ➔ `pulangkeun`
+* `yield` ➔ `hasilkeun`
+* `lambda` ➔ `fungsi_leutik`
 
 ### Class / Pemrograman Berorientasi Objek (OOP)
-* `class` ➔ `kalas`
-* `self` ➔ `awak`
-* `super` ➔ `induak`
+* `class` ➔ `kelas`
+* `self` ➔ `sorangan`
+* `super` ➔ `indung`
 
 ### Penanganan Error (Exception Handling)
-* `try` ➔ `cubo`
-* `except` ➔ `kacuali`
-* `finally` ➔ `akhirnyo`
-* `raise` ➔ `angkek`
-* `assert` ➔ `pastikan`
+* `try` ➔ `coba`
+* `except` ➔ `iwal`
+* `finally` ➔ `tungtungna`
+* `raise` ➔ `angkat`
+* `assert` ➔ `pastikeun`
 
 ### Import & Modul
-* `import` ➔ `ambiak`
-* `from` ➔ `dari`
-* `as` ➔ `sagai`
+* `import` ➔ `candak`
+* `from` ➔ `ti`
+* `as` ➔ `salaku`
 
 ### Scope / Konteks
-* `global` ➔ `sadoalah`
-* `nonlocal` ➔ `indak_lokal`
-* `with` ➔ `jo_ko`
+* `global` ➔ `sadayana`
+* `nonlocal` ➔ `sanes_lokal`
+* `with` ➔ `sareng_ieu`
 
 ### Asynchronous (Python 3.5+)
-* `async` ➔ `basamo`
-* `await` ➔ `tunggu`
+* `async` ➔ `babarengan`
+* `await` ➔ `antosan`
 
 ### Pattern Matching (Python 3.10+)
-* `match` ➔ `cocok`
-* `case` ➔ `kasus`
+* `match` ➔ `cocog`
+* `case` ➔ `kaayaan`
 
 ### Lainnya
-* `del` ➔ `hapuih`
-* `is` ➔ `ialah`
+* `del` ➔ `hapus`
+* `is` ➔ `nyaeta`
 
 ---
 
 ## 2. Fungsi Bawaan (Built-in Functions)
 
 ### Input / Output
-* `print` ➔ `cetak`
-* `input` ➔ `tanyo`
+* `print` ➔ `citak`
+* `input` ➔ `tanya`
 
 ### Konversi Tipe Data
-* `int` ➔ `angko`
+* `int` ➔ `angka`
 * `float` ➔ `desimal`
-* `str` ➔ `teks`
+* `str` ➔ `tulisan`
 * `bool` ➔ `logika`
 * `complex` ➔ `kompleks`
 
 ### Koleksi / Struktur Data
-* `list` ➔ `daftar`
+* `list` ➔ `daptar`
 * `tuple` ➔ `kumpulan`
 * `set` ➔ `himpunan`
 * `dict` ➔ `kamus`
@@ -91,34 +91,34 @@ Dokumen ini berisi daftar lengkap pemetaan (*mapping*) kata kunci (keywords) dan
 
 ### Operasi Angka
 * `abs` ➔ `mutlak`
-* `round` ➔ `bulekkan`
-* `pow` ➔ `pangkek`
-* `divmod` ➔ `bagisisa`
+* `round` ➔ `buleudkeun`
+* `pow` ➔ `pangkat`
+* `divmod` ➔ `bagisesa`
 * `sum` ➔ `jumlah`
-* `max` ➔ `tatinggi`
-* `min` ➔ `tarandah`
+* `max` ➔ `pangluhurna`
+* `min` ➔ `panghandapna`
 
 ### Iterasi
 * `len` ➔ `panjang`
-* `range` ➔ `jarak`
-* `enumerate` ➔ `daftarkan`
-* `zip` ➔ `gabuang`
+* `range` ➔ `rentang`
+* `enumerate` ➔ `daptarkeun`
+* `zip` ➔ `gabung`
 * `iter` ➔ `ulang`
-* `next` ➔ `lanjuik`
-* `reversed` ➔ `baliakkan`
-* `sorted` ➔ `uruikkan`
+* `next` ➔ `lajeng`
+* `reversed` ➔ `balikeun`
+* `sorted` ➔ `urutkeun`
 
 ### Pengecekan Logika Tipe / Refleksi
-* `all` ➔ `sadonyo`
-* `any` ➔ `salah_satu`
-* `type` ➔ `jinih`
-* `isinstance` ➔ `ujikate`
-* `issubclass` ➔ `ujisub`
-* `id` ➔ `tando`
-* `callable` ➔ `bisa_dipanggia`
+* `all` ➔ `sadayanana`
+* `any` ➔ `salah_sahiji`
+* `type` ➔ `jenis`
+* `isinstance` ➔ `uji_kelas`
+* `issubclass` ➔ `uji_subkelas`
+* `id` ➔ `tanda`
+* `callable` ➔ `tiasa_panggil`
 
 ### Karakter & Encoding
-* `chr` ➔ `huruf`
+* `chr` ➔ `aksara`
 * `ord` ➔ `urutan`
 * `ascii` ➔ `aski`
 * `bin` ➔ `biner`
@@ -126,34 +126,34 @@ Dokumen ini berisi daftar lengkap pemetaan (*mapping*) kata kunci (keywords) dan
 * `hex` ➔ `heksa`
 
 ### Utilitas Objek & Atribut
-* `getattr` ➔ `ambiak_sifaik`
-* `setattr` ➔ `atur_sifaik`
-* `hasattr` ➔ `ado_sifaik`
-* `delattr` ➔ `hapuih_sifaik`
+* `getattr` ➔ `candak_sipat`
+* `setattr` ➔ `atur_sipat`
+* `hasattr` ➔ `aya_sipat`
+* `delattr` ➔ `hapus_sipat`
 
 ### Namespace & Memori
-* `globals` ➔ `globalnyo`
-* `locals` ➔ `lokalnyo`
-* `vars` ➔ `variabelnyo`
+* `globals` ➔ `sadayanana_global`
+* `locals` ➔ `lokalna`
+* `vars` ➔ `variabelna`
 * `dir` ➔ `arah`
 * `bytes` ➔ `bait`
 * `bytearray` ➔ `susunan_bait`
-* `memoryview` ➔ `caliak_memori`
+* `memoryview` ➔ `tempo_memori`
 
 ### Utilitas Eksekusi & Kelas
 * `eval` ➔ `evaluasi`
-* `exec` ➔ `jalankan`
+* `exec` ➔ `jalankeun`
 * `compile` ➔ `kompilasi`
-* `open` ➔ `bukak`
-* `map` ➔ `petakan`
-* `filter` ➔ `sariang`
+* `open` ➔ `buka`
+* `map` ➔ `petakeun`
+* `filter` ➔ `saring`
 * `property` ➔ `properti`
 * `staticmethod` ➔ `metode_statis`
-* `classmethod` ➔ `metode_kalas`
-* `__import__` ➔ `__ambiak__`
-* `breakpoint` ➔ `titiak_ranti`
-* `format` ➔ `bantuak`
-* `repr` ➔ `wakia`
+* `classmethod` ➔ `metode_kelas`
+* `__import__` ➔ `__candak__`
+* `breakpoint` ➔ `titik_eureun`
+* `format` ➔ `bentuk`
+* `repr` ➔ `wakil`
 * `hash` ➔ `acak`
 * `help` ➔ `tolong`
 * `slice` ➔ `potong`
