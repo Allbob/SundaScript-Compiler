@@ -1,0 +1,41 @@
+jieun tambah(a, b) {
+    pulangkeun a + b
+}
+
+jieun main() {
+    citak("=== Ujian Akhir SundaScript ===")
+    
+    # Meminta input dari pengguna
+    teks_a = tanya("Masukkan angka pertama: ")
+    teks_b = tanya("Masukkan angka kedua: ")
+    
+    # Konversi tulisan ke angka
+    angka_a = angka(teks_a)
+    angka_b = angka(teks_b)
+    
+    hasil = tambah(angka_a, angka_b)
+    
+    citak("Hasil Penambahan:")
+    citak(hasil)
+    
+    citak("-----------------------")
+    citak("Tes Perulangan (Looping)")
+    angka_awal = 1
+    salami (angka_awal <= 3) {
+        citak("Iterasi ke-")
+        citak(angka_awal)
+        angka_awal = angka_awal + 1
+    }
+
+    citak("-----------------------")
+    tes_optimasi = 10 * 5 + 2
+    lamun (tes_optimasi > 50) {
+        citak("Optimasi Matematika Berhasil!")
+    } sanesna {
+        citak("Gagal Optimasi")
+    }
+
+    tanya("Tekan Enter untuk keluar...")
+}
+
+main()

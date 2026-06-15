@@ -1,0 +1,15 @@
+jieun faktorial(n) {
+    lamun (n <= 1) {
+        pulangkeun 1
+    }
+    pulangkeun n * faktorial(n - 1)
+}
+
+citak("Mulai uji coba SundaScript...")
+hasil = faktorial(5)
+citak("Faktorial 5 adalah:")
+citak(hasil)
+
+pikeun (i dina rentang(3)) {
+    citak(i)
+}
