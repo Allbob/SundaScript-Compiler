@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Status](https://img.shields.io/badge/Status-Selesai-success?style=for-the-badge) ![Keamanan](https://img.shields.io/badge/Keamanan-Stabil_&_Aman-success?style=for-the-badge)
 
-> **Konteks:** Dokumen ini menjelaskan rancangan, implementasi, dan validasi untuk **Fase 4: Abstract Syntax Tree** dari kompilator MinangScript.
+> **Konteks:** Dokumen ini menjelaskan rancangan, implementasi, dan validasi untuk **Fase 4: Abstract Syntax Tree** dari kompilator SundaScript.
 
 ## Apa itu Fase 4 (AST)?
 Fase 4 (AST) adalah proses penyederhanaan pohon *Concrete Syntax Tree (CST)* yang mentah dengan cara membuang seluruh karakter non-esensial dan elemen dekoratif sintaks (seperti tanda kurung dan titik koma), sehingga menghasilkan struktur logika murni yang ringkas (*Abstract Syntax Tree*).

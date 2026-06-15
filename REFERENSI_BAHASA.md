@@ -1,6 +1,6 @@
-# Referensi Bahasa MinangScript
+# Referensi Bahasa SundaScript
 
-Dokumen ini berisi daftar lengkap pemetaan (*mapping*) kata kunci (keywords) dan fungsi bawaan (built-in functions) dari bahasa Python ke bahasa MinangScript.
+Dokumen ini berisi daftar lengkap pemetaan (*mapping*) kata kunci (keywords) dan fungsi bawaan (built-in functions) dari bahasa Python ke bahasa SundaScript.
 
 ## 1. Kata Kunci Dasar (Keywords)
 

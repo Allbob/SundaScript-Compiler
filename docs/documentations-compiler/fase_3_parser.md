@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Status](https://img.shields.io/badge/Status-Selesai-success?style=for-the-badge) ![Keamanan](https://img.shields.io/badge/Keamanan-Stabil_&_Aman-success?style=for-the-badge)
 
-> **Konteks:** Dokumen ini menjelaskan rancangan, implementasi, dan validasi untuk **Fase 3: Parser** dari kompilator MinangScript.
+> **Konteks:** Dokumen ini menjelaskan rancangan, implementasi, dan validasi untuk **Fase 3: Parser** dari kompilator SundaScript.
 
 ## Apa itu Fase 3 (Parser)?
 Fase 3 (Parser) adalah tahapan analisis sintaksis yang menerima aliran Token dari Lexer dan merakitnya menjadi sebuah pohon struktural yang disebut *Parse Tree* atau *Concrete Syntax Tree (CST)*, guna memverifikasi bahwa urutan token sesuai dengan aturan Context-Free Grammar.

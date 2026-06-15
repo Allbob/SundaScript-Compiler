@@ -111,7 +111,7 @@ class TestSemanticAnalysis(unittest.TestCase):
         with open("tests/test_full_coverage.py", "r") as f:
             lines = f.readlines()
             
-        # Extract the MinangScript string from test_full_coverage.py
+        # Extract the SundaScript string from test_full_coverage.py
         # This is a bit hacky, better to just copy the script
         code = """
         kalas Kucing(Hewan) {

@@ -2,10 +2,10 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Status](https://img.shields.io/badge/Status-Selesai-success?style=for-the-badge) ![Keamanan](https://img.shields.io/badge/Keamanan-Stabil-success?style=for-the-badge)
 
-> **Konteks:** Dokumen ini menjelaskan rancangan, implementasi, dan validasi untuk **Fase 1: Desain Bahasa** dari kompilator MinangScript.
+> **Konteks:** Dokumen ini menjelaskan rancangan, implementasi, dan validasi untuk **Fase 1: Desain Bahasa** dari kompilator SundaScript.
 
 ## Apa itu Fase 1 (Desain Bahasa)?
-Fase 1 (Desain Bahasa) adalah tahapan awal pembuatan kompilator yang bertujuan untuk menetapkan spesifikasi inti bahasa MinangScript, merancang substitusi dari kosakata bahasa pemrograman Python menjadi representasi lokal Minangkabau.
+Fase 1 (Desain Bahasa) adalah tahapan awal pembuatan kompilator yang bertujuan untuk menetapkan spesifikasi inti bahasa SundaScript, merancang substitusi dari kosakata bahasa pemrograman Python menjadi representasi lokal Sundakabau.
 
 ## Rincian Implementasi
 Pada tahap ini, pengembangan difokuskan pada pemetaan tata bahasa:

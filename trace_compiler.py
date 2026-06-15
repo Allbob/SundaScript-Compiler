@@ -17,7 +17,7 @@ def trace_compilation(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         source_code = f.read()
 
-    print_header("Fase 1: Source Code MinangScript")
+    print_header("Fase 1: Source Code SundaScript")
     print(source_code)
 
     print_header("Fase 2: Lexical Analysis (Tokens)")
@@ -66,4 +66,4 @@ def trace_compilation(filepath):
     exec(python_code, {})
 
 if __name__ == '__main__':
-    trace_compilation("ujian_akhir.minang")
+    trace_compilation("ujian_akhir.sunda")

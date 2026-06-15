@@ -62,7 +62,7 @@ def main():
             exec(python_code, {})
         elif perintah == 'rilis':
             # Save to .py file temporary
-            out_file = filepath.replace('.sunda', '.py').replace('.minang', '.py')
+            out_file = filepath.replace('.sunda', '.py').replace('.sunda', '.py')
             with open(out_file, 'w', encoding='utf-8') as out:
                 out.write(python_code)
             print(f"Berhasil kompilasi ke Python: {out_file}")
