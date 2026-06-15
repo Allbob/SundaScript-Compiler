@@ -5,7 +5,7 @@ jieun tambah(a, b) {
 jieun main() {
     citak("=== Ujian Akhir SundaScript ===")
     
-    # Meminta input dari pengguna
+    # Meminta input ti pengguna
     teks_a = tanya("Masukkan angka pertama: ")
     teks_b = tanya("Masukkan angka kedua: ")
     

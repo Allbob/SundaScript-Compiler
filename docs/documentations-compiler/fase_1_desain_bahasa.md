@@ -2,16 +2,16 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Status](https://img.shields.io/badge/Status-Selesai-success?style=for-the-badge) ![Keamanan](https://img.shields.io/badge/Keamanan-Stabil-success?style=for-the-badge)
 
-> **Konteks:** Dokumen ini menjelaskan rancangan, implementasi, dan validasi untuk **Fase 1: Desain Bahasa** dari kompilator SundaScript.
+> **Konteks:** Dokumen ini menjelaskan rancangan, implementasi, dan validasi untuk **Fase 1: Desain Bahasa** ti kompilator SundaScript.
 
 ## Apa itu Fase 1 (Desain Bahasa)?
-Fase 1 (Desain Bahasa) adalah tahapan awal pembuatan kompilator yang bertujuan untuk menetapkan spesifikasi inti bahasa SundaScript, merancang substitusi dari kosakata bahasa pemrograman Python menjadi representasi lokal Sundakabau.
+Fase 1 (Desain Bahasa) adalah tahapan awal pembuatan kompilator yang bertujuan untuk menetapkan spesifikasi inti bahasa SundaScript, merancang substitusi ti kosakata bahasa pemrograman Python menjadi representasi lokal Sundakabau.
 
 ## Rincian Implementasi
 Pada tahap ini, pengembangan difokuskan pada pemetaan tata bahasa:
 
-- **Kata Kunci Kontrol:** Telah ditetapkan pemetaan 35 kata kunci kontrol utama (contohnya `kok`, `buek`, `salamo`).
-- **Fungsi Bawaan:** Telah ditetapkan pemetaan 68 fungsi bawaan (contohnya `cetak`, `masuakan`).
+- **Kata Kunci Kontrol:** Telah ditetapkan pemetaan 35 kata kunci kontrol utama (contohnya `lamun`, `jieun`, `salami`).
+- **Fungsi Bawaan:** Telah ditetapkan pemetaan 68 fungsi bawaan (contohnya `citak`, `masuakan`).
 - **Context-Free Grammar (CFG):** Telah dirumuskan struktur tata bahasa sederhana yang menjadi pondasi pembentukan pohon sintaksis pada fase parser dan compiler selanjutnya.
 
 Menurut arsitektur sistem, karena bahasa ini dirancang eksklusif sebagai subset fungsional untuk eksperimen teknik kompilasi, tipe data kompleks atau fitur orientasi objek sengaja tidak didukung. Fokus dialihkan sepenuhnya pada aliran logika prosedural dasar.

@@ -2,7 +2,7 @@ import re
 from typing import List
 from src.token import Token, TokenType
 
-# Himpunan keyword dan fungsi bawaan yang dipetakan dari project_setup.md
+# Himpunan keyword dan fungsi bawaan yang dipetakan ti project_setup.md
 KEYWORDS = {
     'Leres', 'Lepat', 'Suwung', # Boolean / Nilai Khusus yang masuk ke keyword
     'jeung', 'atawa', 'henteu', 'lamun', 'lamun_sanes', 'sanesna', 'pikeun', 'salami', 

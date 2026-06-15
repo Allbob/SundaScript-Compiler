@@ -27,7 +27,7 @@ class TestLexer(unittest.TestCase):
         tokens = lexer.tokenize()
         
         # Expected tokens: 
-        # kok, (, x, >, 5, ), {, cetak, (, "Gadang", ), }, EOF
+        # lamun, (, x, >, 5, ), {, citak, (, "Gadang", ), }, EOF
         expected_types = [
             TokenType.KEYWORD, TokenType.LPAREN, TokenType.IDENTIFIER,
             TokenType.OPERATOR, TokenType.NUMBER, TokenType.RPAREN,

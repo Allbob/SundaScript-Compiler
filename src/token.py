@@ -7,7 +7,7 @@ class TokenType(Enum):
     STRING = auto()
     IDENTIFIER = auto()
     
-    # Kategori dari Pemetaan project_setup.md
+    # Kategori ti Pemetaan project_setup.md
     KEYWORD = auto()
     BUILTIN = auto()
     

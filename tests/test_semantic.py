@@ -114,33 +114,33 @@ class TestSemanticAnalysis(unittest.TestCase):
         # Extract the SundaScript string from test_full_coverage.py
         # This is a bit hacky, better to just copy the script
         code = """
-        kalas Kucing(Hewan) {
-            buek meong(awak) {
-                cetak("Meong")
+        kelas Kucing(Hewan) {
+            jieun meong(sorangan) {
+                citak("Meong")
             }
         }
         
-        cubo {
-            angkek Error()
-        } kacuali {
+        coba {
+            angkat Error()
+        } iwal {
             lewat
-        } akhirnyo {
+        } tungtungna {
             lewat
         }
         
-        ambiak os
-        dari math ambiak pi
+        candak os
+        ti math candak pi
         
-        basamo buek proses() {
-            tunggu sleep(1)
+        babarengan jieun proses() {
+            antosan sleep(1)
         }
         
         x = 1
-        cocok x {
-            kasus 1 {
-                cetak("Satu")
+        cocog x {
+            kaayaan 1 {
+                citak("Satu")
             }
-            kasus 2 {
+            kaayaan 2 {
                 # Ini akan error karena baranti diluar loop. Kita hapus baranti atau masukin loop
             }
         }

@@ -4,27 +4,27 @@
 
 SundaScript Mini Compiler adalah proyek kompilator berukuran kecil yang mengadaptasi sebagian kosakata bahasa pemrograman ke dalam bahasa daerah Sundakabau. Proyek ini dibangun sebagai eksperimen dan implementasi praktikum untuk ranah ilmu Teknik Kompilasi. 
 
-Perlu dicatat bahwa kompilator ini tidak menerjemahkan atau mengubah seluruh fitur bahasa Python secara penuh. Kompilator ini **murni sebuah bahasa *mini*** yang hanya menargetkan dan mendukung **subset kata kunci** serta operasi dasar tertentu untuk memvalidasi alur teori kompilasi dari awal hingga menjadi berkas eksekusi.
+Perlu dicatat bahwa kompilator ini tidak menerjemahkan atau mengubah seluruh fitur bahasa Python secara penuh. Kompilator ini **murni sebuah bahasa *mini*** yang hanya menargetkan dan mendukung **subset kata kunci** serta operasi dasar tertentu untuk memvalidasi alur teori kompilasi ti awal hingga menjadi berkas eksekusi.
 
 ## Fitur Utama
 
-- Sintaks Lokal Dasar: Mendukung kata kunci pemrograman esensial yang diubah ke bahasa Sunda (seperti `buek` untuk mendefinisikan fungsi, `kok` untuk kondisi logika, `salamo` untuk perulangan). Rujukan lengkap terdapat pada berkas REFERENSI_BAHASA.md.
+- Sintaks Lokal Dasar: Mendukung kata kunci pemrograman esensial yang diubah ke bahasa Sunda (seperti `jieun` untuk mendefinisikan fungsi, `lamun` untuk kondisi logika, `salami` untuk perulangan). Rujukan lengkap terdapat pada berkas REFERENSI_BAHASA.md.
 - Standalone Binary: Dilengkapi dengan pengaturan pemaketan agar skrip penyusun kompilator dapat dibungkus menjadi satu berkas `sunda.exe` yang langsung berjalan di OS Windows.
 - Pipeline Kompilasi Murni: Alur kerja menerapkan prinsip pembacaan leksikal, parsing AST, dan optimasi dasar seperti *Constant Folding* dan *Dead Code Elimination* sebelum eksekusi terjadi.
 
 ## Panduan Penggunaan `sunda.exe`
 
-Bagi pengguna yang sudah memiliki berkas `sunda.exe` (atau mengunduhnya dari rilis), program ini dapat dijalankan langsung melalui Command Prompt atau PowerShell di Windows **tanpa memerlukan instalasi Python**.
+Bagi pengguna yang sudah memiliki berkas `sunda.exe` (atau mengunduhnya ti rilis), program ini dapat dijalankan langsung melalui Command Prompt atau PowerShell di Windows **tanpa memerlukan instalasi Python**.
 
 ### Persiapan Direktori & Environment Variables PATH
 Agar eksekusi skrip berhasil, pastikan berkas kode berekstensi `.sunda` yang ingin dieksekusi berada di **satu folder yang sama** dengan `sunda.exe`. 
 
-Namun, agar kompilator dapat dipanggil dari direktori mana saja tanpa harus selalu menyalin `sunda.exe`, direktori penyimpanannya perlu didaftarkan ke dalam *Environment Variables PATH* Windows:
+Namun, agar kompilator dapat dipanggil ti direktori mana saja tanpa harus selalu menyalin `sunda.exe`, direktori penyimpanannya perlu didaftarkan ke dalam *Environment Variables PATH* Windows:
 1. Buka *Start Menu* Windows, ketik **Edit the system environment variables**, lalu tekan *Enter*.
 2. Klik tombol **Environment Variables...** di sudut kanan bawah.
 3. Pada area *System variables* (atau *User variables*), pilih variabel bernama **Path**, lalu klik **Edit...**
 4. Klik **New**, lalu tempel (*paste*) jalur (*Path*) lengkap menuju folder tempat `sunda.exe` berada (contoh: `C:\Path\Menuju\Mini-Compiler\dist`).
-5. Klik **OK** pada semua jendela. Setelah proses ini selesai, perintah `sunda.exe` sudah bisa dieksekusi dari direktori mana pun di dalam terminal.
+5. Klik **OK** pada semua jendela. Setelah proses ini selesai, perintah `sunda.exe` sudah bisa dieksekusi ti direktori mana pun di dalam terminal.
 
 ### Menjalankan Skrip
 Perintah `jalan` digunakan untuk **mengeksekusi berkas kode** berekstensi `.sunda` secara langsung.
@@ -66,7 +66,7 @@ import pytest
 
 # Menggunakan pola Parameterized untuk menguji berbagai kosakata dasar Sunda
 @pytest.mark.parametrize("kode_sunda, output_harapan", [
-    ("cetak(5 + 5)", "10\n"),
+    ("citak(5 + 5)", "10\n"),
     ("x = 10\ncetak(x)", "10\n"),
 ])
 def test_fungsional_sunda(tmp_path, kode_sunda, output_harapan):
@@ -76,14 +76,14 @@ def test_fungsional_sunda(tmp_path, kode_sunda, output_harapan):
     hasil = subprocess.run(["dist/sunda.exe", "jalan", str(jalur_skrip)], capture_output=True, text=True)
     assert hasil.stdout == output_harapan
 ```
-**Ekspektasi Penjelasan:** Jika script di atas dijalankan via `pytest test_sunda.py`, terminal akan mencetak status `PASSED`. Ini membuktikan bahwa mekanisme kompilasi untuk alokasi memori (penugasan variabel) dan *output console* (cetak) sukses bekerja dengan akurat.
+**Ekspektasi Penjelasan:** Jika script di atas dijalankan via `pytest test_sunda.py`, terminal akan mencetak status `PASSED`. Ini membuktikan bahwa mekanisme kompilasi untuk alokasi memori (penugasan variabel) dan *output console* (citak) sukses bekerja dengan akurat.
 
 ### 2. Stress Testing (Beban Kompilasi)
 Pengujian ekstrem diberikan untuk melihat apakah *Parser* dan *AST Builder* mampu menangani beban sintaks yang dalam (seperti rekursi berlapis atau perhitungan tak terbatas) tanpa mengalami kebocoran memori atau *Stack Overflow*.
 
 Sebagai contoh, dilakukan injeksi operasi aritmatika brutal sebanyak puluhan ribu token dalam satu baris:
 ```text
-cetak(1 + 2 * 3 - 4 / 5 + 6 * 7 ... [berulang hingga 10.000 token])
+citak(1 + 2 * 3 - 4 / 5 + 6 * 7 ... [berulang hingga 10.000 token])
 ```
 **Ekspektasi Penjelasan:** Karena kompilator ini memiliki modul Optimasi Fase 6 (*Constant Folding*), program pembaca tidak akan mogok (*crash*), melainkan mesin akan mendeteksi kerumitan tersebut dan menyederhanakan perhitungan raksasanya menjadi sebuah angka final seketika di belakang layar, lalu langsung mencetaknya dalam hitungan milidetik.
 
@@ -93,7 +93,7 @@ Pengujian ini dilakukan dengan sengaja mengumpankan kode yang cacat secara tata 
 
 ## Struktur Repositori
 
-Repositori ini memuat seluruh kode sumber kompilator mulai dari mesin inti hingga berkas eksekusi:
+Repositori ini memuat seluruh kode sumber kompilator mulai ti mesin inti hingga berkas eksekusi:
 
 ```text
 sundascript-compiler/
